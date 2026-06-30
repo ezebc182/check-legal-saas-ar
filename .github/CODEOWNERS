@@ -1,0 +1,7 @@
+# CODEOWNERS — check-legal-saas-ar
+#
+# Todo cambio en el repo requiere revisión de @ezebc182.
+# Para más información sobre CODEOWNERS:
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+* @ezebc182

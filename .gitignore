@@ -1,0 +1,157 @@
+# ============================================================
+# check-legal-saas-ar — .gitignore
+# Repositorio de perfiles de práctica legal (Markdown)
+# ============================================================
+
+# ------------------------------------------------------------
+# CRITICO: Archivos con información confidencial o casos reales
+# Nadie debe commitear accidentalmente datos de clientes reales
+# ------------------------------------------------------------
+*-CONFIDENCIAL.md
+*-confidencial.md
+*-CONFIDENCIAL.txt
+*-caso-real.md
+*-caso-real.txt
+*-cliente-real.md
+*-borrador-privado.md
+*-DRAFT-PRIVADO.md
+*.pdf
+
+# Excepción explícita: si algún día se necesita incluir un PDF
+# de normativa pública, se puede agregar con:
+# !normativa-publica.pdf
+
+# ------------------------------------------------------------
+# Archivos de sistemas operativos
+# ------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ------------------------------------------------------------
+# Editores de código y IDEs
+# ------------------------------------------------------------
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# JetBrains (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Neovim / LazyVim
+*.swp
+*.swo
+*.swn
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+.netrwhist
+tags
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Nano
+*.save
+
+# ------------------------------------------------------------
+# Herramientas de documentación y generación
+# ------------------------------------------------------------
+
+# Node.js (si se usan herramientas de linting de Markdown)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python (si se usan scripts de validación)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# MkDocs / Docusaurus / Jekyll (si se genera un sitio)
+site/
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# ------------------------------------------------------------
+# Archivos temporales y de trabajo
+# ------------------------------------------------------------
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.log
+*.cache
+.cache/
+tmp/
+temp/
+
+# ------------------------------------------------------------
+# Entornos y configuraciones locales
+# ------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.local
+
+# ------------------------------------------------------------
+# Herramientas de CI/CD locales
+# ------------------------------------------------------------
+.act/
+
+# ------------------------------------------------------------
+# Carpetas de trabajo personal (no del proyecto)
+# ------------------------------------------------------------
+mis-notas/
+notas-privadas/
+borrador/
+borradores/
+work-in-progress/
+wip/
